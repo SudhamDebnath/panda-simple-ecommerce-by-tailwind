@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda E-commerce</title>
+    <!-- Tailwind Js File -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="mx-auto">
+    <!-- Header Section -->
+    <header class="md:flex items-center md:px-20 bg-slate-300 md:fixed w-full p-5 md:p-0">
+        <div class="mr-4">
+            <img src="images/logo.png" alt="">
+        </div>
+        <nav>
+            <ul class="md:flex mt-3 md:mt-0 items-center">
+                <li class="px-2 py-2 md:px-4 md:py-5 cursor-pointer hover:text-slate-500 hover:bg-orange-100 hover:rounded-md"> Home</li>
+                <li class="px-2 py-2 md:px-4 md:py-5 cursor-pointer hover:text-slate-500 hover:bg-orange-100 hover:rounded-md">Shoes</li>
+                <li class="px-2 py-2 md:px-4 md:py-5 cursor-pointer hover:text-slate-500 hover:bg-orange-100 hover:rounded-md">Backpack</li>
+                <li class="px-2 py-2 md:px-4 md:py-5 cursor-pointer hover:text-slate-500 hover:bg-orange-100 hover:rounded-md">Subscribe</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- banner Section -->
+    <section class="pt-5 md:pt-16 max-w-6xl mx-auto bg-red-100 px-5 md:px-10 md:flex items-center justify-between gap-10 md:rounded-xl text-center md:text-left">
+        <div class="space-y-3">
+            <h1 class="text-4xl font-bold">X-Box for your living room</h1>
+            <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+            <button class="text-5xl font-medium">$600</button>
+            <br>
+            <button  class="bg-gradient-to-b from-[#ff589b] to-[#ff136f] px-7 py-3 rounded-lg text-white" id="buyBtn">Buy Now</button>
+        </div>
+        <div class="py-10">
+            <img src="images/banner-images/headphone.png" alt="" class="w-1/2 md:w-9/12 mx-auto" id="bannerImg">
+        </div>
+    </section>
+    <!-- category section -->
+    <section class="max-w-6xl mx-auto my-5 md:my-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-10">
+            <div class="bg-yellow-400 flex items-center justify-between rounded-xl px-10">
+                <div>
+                    <h2 class="text-white text-5xl font-medium">Watch</h2>
+                </div>
+                <div>
+                    <img src="images/categories/watch.png" alt="" class="w-2/3 py-5 mx-auto">
+                </div>
+            </div>
+            <div class="bg-green-700 flex items-center justify-between rounded-xl px-10">
+                <div>
+                    <h2 class="text-white text-5xl font-medium">Bags</h2>
+                </div>
+                <div>
+                    <img src="images/categories/bag.png" alt="" class="w-2/3 py-5 mx-auto">
+                </div>
+            </div>
+            <div class="bg-blue-600 flex items-center justify-between rounded-xl px-10">
+                <div>
+                    <h2 class="text-white text-5xl font-medium">Shoes</h2>
+                </div>
+                <div>
+                    <img src="images/categories/shoes.png" alt="" class="w-2/3 py-5 mx-auto">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Shoes Section -->
+    <section class="max-w-6xl mx-auto my-5 md:my-16">
+        <h2 class="text-5xl font-normal">Shoes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="space-y-3 shadow-xl p-5 rounded-lg card">
+                <img src="images/shoes/shoe-1.png" alt="" class="w-10/12 mx-auto">
+                <h3 class="text-2xl font-medium">Supply 350</h3>
+                <h2 class="text-5xl font-medium">$160</h2>
+                <p class="">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="pt-12">
+                    <button class="bg-gradient-to-b from-[#ff589b] to-[#ff136f] px-7 py-3 rounded-lg text-white buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="space-y-3 shadow-xl p-5 rounded-lg card">
+                <img src="images/shoes/shoe-2.png" alt="" class="w-10/12 mx-auto">
+                <h3 class="text-2xl font-medium">Nike 360</h3>
+                <h2 class="text-5xl font-medium">$160</h2>
+                <p class="">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="pt-12">
+                    <button class="bg-gradient-to-b from-[#ff589b] to-[#ff136f] px-7 py-3 rounded-lg text-white buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="space-y-3 shadow-xl p-5 rounded-lg card">
+                <img src="images/shoes/shoe-3.png" alt="" class="w-10/12 mx-auto">
+                <h3 class="text-2xl font-medium">Red Airmax</h3>
+                <h2 class="text-5xl font-medium">$160</h2>
+                <p class="">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="pt-12">
+                    <button class="bg-gradient-to-b from-[#ff589b] to-[#ff136f] px-7 py-3 rounded-lg text-white buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Backpack Section -->
+    <section class="max-w-6xl mx-auto my-5 md:my-16" id="backPack">
+        <h2 class="text-5xl font-normal">Backpack</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="space-y-3 shadow-xl p-5 rounded-lg card">
+                <img src="images/bags/bag-1.png" alt="" class="w-10/12 mx-auto">
+                <h3 class="text-2xl font-medium">Red Laltu Bag</h3>
+                <h2 class="text-5xl font-medium">$160</h2>
+                <p class="">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="pt-12">
+                    <button class="bg-gradient-to-b from-[#ff589b] to-[#ff136f] px-7 py-3 rounded-lg text-white buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="space-y-3 shadow-xl p-5 rounded-lg card">
+                <img src="images/bags/bag-2.png" alt="" class="w-10/12 mx-auto">
+                <h3 class="text-2xl font-medium">Nike 360</h3>
+                <h2 class="text-5xl font-medium">$160</h2>
+                <p class="">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="pt-12">
+                    <button class="bg-gradient-to-b from-[#ff589b] to-[#ff136f] px-7 py-3 rounded-lg text-white buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="space-y-3 shadow-xl p-5 rounded-lg card">
+                <img src="images/bags/bag-3.png" alt="" class="w-10/12 mx-auto">
+                <h3 class="text-2xl font-medium">Red Airmax</h3>
+                <h2 class="text-5xl font-medium">$160</h2>
+                <p class="">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="pt-12">
+                    <button class="bg-gradient-to-b from-[#ff589b] to-[#ff136f] px-7 py-3 rounded-lg text-white buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- from Section -->
+    <section class="max-w-6xl mx-auto my-16 bg-red-100 md:rounded-xl flex justify-center" id="fromSection">
+        <div class="py-20 space-y-3">
+            <h2 class="text-3xl font-normal">LET'S STAY IN TOUCH</h2>
+            <p>Get updates on sales, specials and more</p>
+            <input type="text" name="" id="email" class="w-full py-1 px-3 rounded-md" placeholder="please enter your email hare">
+            <br>
+            <button  class="bg-gradient-to-b from-[#ff589b] to-[#ff136f] px-7 py-3 rounded-lg text-white" disabled id="submit">Email</button>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="pb-10">
+        <p class="text-center">&copy; 2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
+    </footer>
+
+
+    <!-- Script file -->
+    <script src="js/index.js"></script>
+</body>
+</html>
